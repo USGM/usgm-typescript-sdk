@@ -1,6 +1,6 @@
 {
   "name": "@usgm/sdk",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Official TypeScript SDK for the USGM Public API",
   "license": "MIT",
   "repository": {
