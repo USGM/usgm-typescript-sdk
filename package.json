@@ -1,0 +1,33 @@
+{
+  "name": "@usgm/sdk",
+  "version": "1.0.0",
+  "description": "Official TypeScript SDK for the USGM Public API",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/USGM/usgm-typescript-sdk.git"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.4.5"
+  }
+}
