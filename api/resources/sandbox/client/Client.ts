@@ -57,7 +57,7 @@ export class SandboxClient {
             url: core.url.join(
                 (await core.Supplier.get(this._options.baseUrl)) ??
                     (await core.Supplier.get(this._options.environment)) ??
-                    environments.UsgmEnvironment.Default,
+                    environments.UsgmEnvironment.Production,
                 "v1/sandbox/seed",
             ),
             method: "POST",
@@ -160,7 +160,7 @@ export class SandboxClient {
             url: core.url.join(
                 (await core.Supplier.get(this._options.baseUrl)) ??
                     (await core.Supplier.get(this._options.environment)) ??
-                    environments.UsgmEnvironment.Default,
+                    environments.UsgmEnvironment.Production,
                 "v1/sandbox/seed/mail",
             ),
             method: "POST",
@@ -269,7 +269,7 @@ export class SandboxClient {
             url: core.url.join(
                 (await core.Supplier.get(this._options.baseUrl)) ??
                     (await core.Supplier.get(this._options.environment)) ??
-                    environments.UsgmEnvironment.Default,
+                    environments.UsgmEnvironment.Production,
                 `v1/sandbox/scans/${core.url.encodePathParam(id)}/complete`,
             ),
             method: "POST",

@@ -68,7 +68,7 @@ export class ShipmentsClient {
             url: core.url.join(
                 (await core.Supplier.get(this._options.baseUrl)) ??
                     (await core.Supplier.get(this._options.environment)) ??
-                    environments.UsgmEnvironment.Default,
+                    environments.UsgmEnvironment.Production,
                 "v1/shipments",
             ),
             method: "GET",
@@ -178,7 +178,7 @@ export class ShipmentsClient {
             url: core.url.join(
                 (await core.Supplier.get(this._options.baseUrl)) ??
                     (await core.Supplier.get(this._options.environment)) ??
-                    environments.UsgmEnvironment.Default,
+                    environments.UsgmEnvironment.Production,
                 `v1/shipments/${core.url.encodePathParam(id)}`,
             ),
             method: "GET",

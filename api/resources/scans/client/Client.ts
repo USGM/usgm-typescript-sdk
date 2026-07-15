@@ -73,7 +73,7 @@ export class ScansClient {
             url: core.url.join(
                 (await core.Supplier.get(this._options.baseUrl)) ??
                     (await core.Supplier.get(this._options.environment)) ??
-                    environments.UsgmEnvironment.Default,
+                    environments.UsgmEnvironment.Production,
                 "v1/scans",
             ),
             method: "GET",
@@ -183,7 +183,7 @@ export class ScansClient {
             url: core.url.join(
                 (await core.Supplier.get(this._options.baseUrl)) ??
                     (await core.Supplier.get(this._options.environment)) ??
-                    environments.UsgmEnvironment.Default,
+                    environments.UsgmEnvironment.Production,
                 "v1/scans",
             ),
             method: "POST",
@@ -292,7 +292,7 @@ export class ScansClient {
             url: core.url.join(
                 (await core.Supplier.get(this._options.baseUrl)) ??
                     (await core.Supplier.get(this._options.environment)) ??
-                    environments.UsgmEnvironment.Default,
+                    environments.UsgmEnvironment.Production,
                 `v1/scans/${core.url.encodePathParam(id)}`,
             ),
             method: "GET",
@@ -398,7 +398,7 @@ export class ScansClient {
             url: core.url.join(
                 (await core.Supplier.get(this._options.baseUrl)) ??
                     (await core.Supplier.get(this._options.environment)) ??
-                    environments.UsgmEnvironment.Default,
+                    environments.UsgmEnvironment.Production,
                 `v1/scans/${core.url.encodePathParam(id)}`,
             ),
             method: "DELETE",
@@ -504,7 +504,7 @@ export class ScansClient {
             url: core.url.join(
                 (await core.Supplier.get(this._options.baseUrl)) ??
                     (await core.Supplier.get(this._options.environment)) ??
-                    environments.UsgmEnvironment.Default,
+                    environments.UsgmEnvironment.Production,
                 `v1/scans/${core.url.encodePathParam(id)}/file`,
             ),
             method: "GET",
@@ -610,7 +610,7 @@ export class ScansClient {
             url: core.url.join(
                 (await core.Supplier.get(this._options.baseUrl)) ??
                     (await core.Supplier.get(this._options.environment)) ??
-                    environments.UsgmEnvironment.Default,
+                    environments.UsgmEnvironment.Production,
                 `v1/scans/${core.url.encodePathParam(id)}/summary`,
             ),
             method: "GET",
@@ -716,7 +716,7 @@ export class ScansClient {
             url: core.url.join(
                 (await core.Supplier.get(this._options.baseUrl)) ??
                     (await core.Supplier.get(this._options.environment)) ??
-                    environments.UsgmEnvironment.Default,
+                    environments.UsgmEnvironment.Production,
                 `v1/scans/${core.url.encodePathParam(id)}/cancel`,
             ),
             method: "POST",

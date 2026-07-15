@@ -67,7 +67,7 @@ export class BankAccountsClient {
             url: core.url.join(
                 (await core.Supplier.get(this._options.baseUrl)) ??
                     (await core.Supplier.get(this._options.environment)) ??
-                    environments.UsgmEnvironment.Default,
+                    environments.UsgmEnvironment.Production,
                 "v1/bank-accounts",
             ),
             method: "GET",
@@ -178,7 +178,7 @@ export class BankAccountsClient {
             url: core.url.join(
                 (await core.Supplier.get(this._options.baseUrl)) ??
                     (await core.Supplier.get(this._options.environment)) ??
-                    environments.UsgmEnvironment.Default,
+                    environments.UsgmEnvironment.Production,
                 "v1/bank-accounts",
             ),
             method: "POST",
@@ -287,7 +287,7 @@ export class BankAccountsClient {
             url: core.url.join(
                 (await core.Supplier.get(this._options.baseUrl)) ??
                     (await core.Supplier.get(this._options.environment)) ??
-                    environments.UsgmEnvironment.Default,
+                    environments.UsgmEnvironment.Production,
                 `v1/bank-accounts/${core.url.encodePathParam(id)}`,
             ),
             method: "GET",
@@ -393,7 +393,7 @@ export class BankAccountsClient {
             url: core.url.join(
                 (await core.Supplier.get(this._options.baseUrl)) ??
                     (await core.Supplier.get(this._options.environment)) ??
-                    environments.UsgmEnvironment.Default,
+                    environments.UsgmEnvironment.Production,
                 `v1/bank-accounts/${core.url.encodePathParam(id)}`,
             ),
             method: "DELETE",
@@ -499,7 +499,7 @@ export class BankAccountsClient {
             url: core.url.join(
                 (await core.Supplier.get(this._options.baseUrl)) ??
                     (await core.Supplier.get(this._options.environment)) ??
-                    environments.UsgmEnvironment.Default,
+                    environments.UsgmEnvironment.Production,
                 `v1/bank-accounts/${core.url.encodePathParam(id)}`,
             ),
             method: "PATCH",

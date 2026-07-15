@@ -68,7 +68,7 @@ export class AddressesClient {
             url: core.url.join(
                 (await core.Supplier.get(this._options.baseUrl)) ??
                     (await core.Supplier.get(this._options.environment)) ??
-                    environments.UsgmEnvironment.Default,
+                    environments.UsgmEnvironment.Production,
                 "v1/addresses",
             ),
             method: "GET",
@@ -184,7 +184,7 @@ export class AddressesClient {
             url: core.url.join(
                 (await core.Supplier.get(this._options.baseUrl)) ??
                     (await core.Supplier.get(this._options.environment)) ??
-                    environments.UsgmEnvironment.Default,
+                    environments.UsgmEnvironment.Production,
                 "v1/addresses",
             ),
             method: "POST",
@@ -296,7 +296,7 @@ export class AddressesClient {
             url: core.url.join(
                 (await core.Supplier.get(this._options.baseUrl)) ??
                     (await core.Supplier.get(this._options.environment)) ??
-                    environments.UsgmEnvironment.Default,
+                    environments.UsgmEnvironment.Production,
                 "v1/addresses/default",
             ),
             method: "GET",
@@ -406,7 +406,7 @@ export class AddressesClient {
             url: core.url.join(
                 (await core.Supplier.get(this._options.baseUrl)) ??
                     (await core.Supplier.get(this._options.environment)) ??
-                    environments.UsgmEnvironment.Default,
+                    environments.UsgmEnvironment.Production,
                 `v1/addresses/${core.url.encodePathParam(id)}`,
             ),
             method: "GET",
@@ -512,7 +512,7 @@ export class AddressesClient {
             url: core.url.join(
                 (await core.Supplier.get(this._options.baseUrl)) ??
                     (await core.Supplier.get(this._options.environment)) ??
-                    environments.UsgmEnvironment.Default,
+                    environments.UsgmEnvironment.Production,
                 `v1/addresses/${core.url.encodePathParam(id)}`,
             ),
             method: "DELETE",
@@ -618,7 +618,7 @@ export class AddressesClient {
             url: core.url.join(
                 (await core.Supplier.get(this._options.baseUrl)) ??
                     (await core.Supplier.get(this._options.environment)) ??
-                    environments.UsgmEnvironment.Default,
+                    environments.UsgmEnvironment.Production,
                 `v1/addresses/${core.url.encodePathParam(id)}`,
             ),
             method: "PATCH",
@@ -727,7 +727,7 @@ export class AddressesClient {
             url: core.url.join(
                 (await core.Supplier.get(this._options.baseUrl)) ??
                     (await core.Supplier.get(this._options.environment)) ??
-                    environments.UsgmEnvironment.Default,
+                    environments.UsgmEnvironment.Production,
                 `v1/addresses/${core.url.encodePathParam(id)}/default`,
             ),
             method: "PATCH",

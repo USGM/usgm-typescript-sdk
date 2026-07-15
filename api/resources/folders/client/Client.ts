@@ -57,7 +57,7 @@ export class FoldersClient {
             url: core.url.join(
                 (await core.Supplier.get(this._options.baseUrl)) ??
                     (await core.Supplier.get(this._options.environment)) ??
-                    environments.UsgmEnvironment.Default,
+                    environments.UsgmEnvironment.Production,
                 "v1/folders",
             ),
             method: "GET",
@@ -162,7 +162,7 @@ export class FoldersClient {
             url: core.url.join(
                 (await core.Supplier.get(this._options.baseUrl)) ??
                     (await core.Supplier.get(this._options.environment)) ??
-                    environments.UsgmEnvironment.Default,
+                    environments.UsgmEnvironment.Production,
                 "v1/folders",
             ),
             method: "POST",
@@ -271,7 +271,7 @@ export class FoldersClient {
             url: core.url.join(
                 (await core.Supplier.get(this._options.baseUrl)) ??
                     (await core.Supplier.get(this._options.environment)) ??
-                    environments.UsgmEnvironment.Default,
+                    environments.UsgmEnvironment.Production,
                 `v1/folders/${core.url.encodePathParam(id)}`,
             ),
             method: "GET",
@@ -377,7 +377,7 @@ export class FoldersClient {
             url: core.url.join(
                 (await core.Supplier.get(this._options.baseUrl)) ??
                     (await core.Supplier.get(this._options.environment)) ??
-                    environments.UsgmEnvironment.Default,
+                    environments.UsgmEnvironment.Production,
                 `v1/folders/${core.url.encodePathParam(id)}`,
             ),
             method: "DELETE",
@@ -483,7 +483,7 @@ export class FoldersClient {
             url: core.url.join(
                 (await core.Supplier.get(this._options.baseUrl)) ??
                     (await core.Supplier.get(this._options.environment)) ??
-                    environments.UsgmEnvironment.Default,
+                    environments.UsgmEnvironment.Production,
                 `v1/folders/${core.url.encodePathParam(id)}`,
             ),
             method: "PATCH",

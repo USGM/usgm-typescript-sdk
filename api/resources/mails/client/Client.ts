@@ -90,7 +90,7 @@ export class MailsClient {
             url: core.url.join(
                 (await core.Supplier.get(this._options.baseUrl)) ??
                     (await core.Supplier.get(this._options.environment)) ??
-                    environments.UsgmEnvironment.Default,
+                    environments.UsgmEnvironment.Production,
                 "v1/mails",
             ),
             method: "GET",
@@ -200,7 +200,7 @@ export class MailsClient {
             url: core.url.join(
                 (await core.Supplier.get(this._options.baseUrl)) ??
                     (await core.Supplier.get(this._options.environment)) ??
-                    environments.UsgmEnvironment.Default,
+                    environments.UsgmEnvironment.Production,
                 `v1/mails/${core.url.encodePathParam(id)}`,
             ),
             method: "GET",
@@ -306,7 +306,7 @@ export class MailsClient {
             url: core.url.join(
                 (await core.Supplier.get(this._options.baseUrl)) ??
                     (await core.Supplier.get(this._options.environment)) ??
-                    environments.UsgmEnvironment.Default,
+                    environments.UsgmEnvironment.Production,
                 `v1/mails/${core.url.encodePathParam(id)}`,
             ),
             method: "PATCH",
@@ -415,7 +415,7 @@ export class MailsClient {
             url: core.url.join(
                 (await core.Supplier.get(this._options.baseUrl)) ??
                     (await core.Supplier.get(this._options.environment)) ??
-                    environments.UsgmEnvironment.Default,
+                    environments.UsgmEnvironment.Production,
                 `v1/mails/${core.url.encodePathParam(id)}/archive`,
             ),
             method: "POST",
@@ -521,7 +521,7 @@ export class MailsClient {
             url: core.url.join(
                 (await core.Supplier.get(this._options.baseUrl)) ??
                     (await core.Supplier.get(this._options.environment)) ??
-                    environments.UsgmEnvironment.Default,
+                    environments.UsgmEnvironment.Production,
                 `v1/mails/${core.url.encodePathParam(id)}/unarchive`,
             ),
             method: "POST",
@@ -627,7 +627,7 @@ export class MailsClient {
             url: core.url.join(
                 (await core.Supplier.get(this._options.baseUrl)) ??
                     (await core.Supplier.get(this._options.environment)) ??
-                    environments.UsgmEnvironment.Default,
+                    environments.UsgmEnvironment.Production,
                 `v1/mails/${core.url.encodePathParam(id)}/discard`,
             ),
             method: "POST",
@@ -733,7 +733,7 @@ export class MailsClient {
             url: core.url.join(
                 (await core.Supplier.get(this._options.baseUrl)) ??
                     (await core.Supplier.get(this._options.environment)) ??
-                    environments.UsgmEnvironment.Default,
+                    environments.UsgmEnvironment.Production,
                 `v1/mails/${core.url.encodePathParam(id)}/undiscard`,
             ),
             method: "POST",
