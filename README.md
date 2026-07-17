@@ -1,6 +1,6 @@
 # USGM TypeScript SDK
 
-The official TypeScript / JavaScript SDK for the [US Global Mail Public API](https://docs.usglobalmail.com) — manage your virtual mailbox, scans, shipments, folders, addresses, and account programmatically.
+The official TypeScript / JavaScript SDK for the [US Global Mail API](https://docs.usglobalmail.com) — manage your virtual mailbox, scans, shipments, folders, addresses, and account programmatically.
 
 ## Installation
 

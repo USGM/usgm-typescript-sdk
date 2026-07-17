@@ -4,5 +4,6 @@ export const MailsListRequestStatusItem = {
     Inbox: "inbox",
     Archived: "archived",
     Quarantine: "quarantine",
+    DiscardRequest: "discard_request",
 } as const;
 export type MailsListRequestStatusItem = (typeof MailsListRequestStatusItem)[keyof typeof MailsListRequestStatusItem];

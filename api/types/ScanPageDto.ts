@@ -19,7 +19,7 @@ export namespace ScanPageDto {
             mail_id: string;
             /** `SCAN_REQUEST` (scan the item) or `UNBOXING_REQUEST` (open it and scan the contents). */
             type: string;
-            /** `SUBMITTED`, `IN_PROCESS`, `COMPLETED`, `CANCELLED`, `REJECTED`, `DELETED` or `RESTORING`. */
+            /** `IN_PROCESS`, `COMPLETED`, `CANCELLED`, `REJECTED`, `DELETED` or `RESTORING`. */
             status: string;
             is_expedited: boolean;
             instruction?: (string | null) | undefined;

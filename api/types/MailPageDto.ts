@@ -36,7 +36,7 @@ export namespace MailPageDto {
             export interface Scan {
                 /** Scan id — fetch it via `/v1/scans/{uuid}`. */
                 uuid: string;
-                /** `SUBMITTED`, `IN_PROCESS`, `COMPLETED`, `CANCELLED`, `REJECTED`, `DELETED` or `RESTORING`. */
+                /** `IN_PROCESS`, `COMPLETED`, `CANCELLED`, `REJECTED`, `DELETED` or `RESTORING`. */
                 status: string;
                 /** `SCAN_REQUEST` or `UNBOXING_REQUEST`. */
                 category: string;
